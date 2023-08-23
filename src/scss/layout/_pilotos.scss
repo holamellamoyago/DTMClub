@@ -1,0 +1,51 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contenedor-pilotos{
+    @include m.resetear-lista;
+
+    padding: 4rem;
+    background-color: white;
+
+    h1{
+        text-align: center;
+        color: black
+    }
+
+}
+
+.grid-pilotos{
+    @include m.grid(4,1rem);
+}
+
+.carta-piloto{
+    display: flex;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: black;
+
+    h1{
+        font-weight: lighter;
+        font-size: 2.8rem;
+        margin: 0;
+        text-align: start;
+        color: white;
+    }
+
+    span{
+        font-size: 3rem;
+        text-align: center;
+        justify-items: end;
+        align-items: center;
+        margin-top: 1rem;
+
+        color: v.$color_principal;
+        font-weight: bold;
+
+    }
+}
+
+.carta-piloto_grid{
+    @include m.grid(2,0rem)
+}

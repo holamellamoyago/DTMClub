@@ -1,0 +1,36 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contenedor-circuitos{
+    display: flex;
+    height: 47rem;
+    margin-bottom: 10rem;
+
+    picture{
+        width: 0rem;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: .5s ease;
+
+        &:hover{
+            cursor: context-menu;
+            width: 10rem;
+            opacity: 1;
+        }
+    }
+
+
+}
+
+.contenedor--circuitos_completo{
+    background-color: white;
+
+    h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        margin:0rem;
+        padding: 3rem;
+    }
+}

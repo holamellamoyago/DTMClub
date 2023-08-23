@@ -1,0 +1,49 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+body{
+    background-color: black;
+}
+
+header{
+    padding: 2rem;
+    border-bottom: 3rem;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    background-color: black;
+
+    a{
+        margin-right: 4rem;
+        color: white;
+
+    
+        &:hover{
+            border-bottom: 3px solid;
+            color: v.$color_principal;
+        }
+
+    }
+
+    
+
+    h1{
+        margin: 0;
+        padding: 0;
+
+
+        &:hover{
+            color: v.$color_principal;
+
+        }
+    }
+
+}
+

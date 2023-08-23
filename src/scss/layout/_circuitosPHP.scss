@@ -1,0 +1,54 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.circuitosPHP{
+    height: 65rem;
+    background-color: black;
+
+    h1{
+        text-align: center;
+        margin: 0;
+        padding: 2rem;
+    }
+
+
+}
+
+
+
+.conetenedor__circuitosPHP{
+
+
+    width: 25rem;
+    height: 20rem;
+    color: black;
+    background-color: white;
+    border-radius: 10%;
+    padding: 1rem;
+
+    margin: 3rem;
+    p{
+        color: black;
+        margin: 0;
+
+    }
+
+    .nombre__circuito{
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .fecha__circuito{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+.grid__circuitosPHP{
+    @include m.grid(4,1rem)
+}
+
+
+

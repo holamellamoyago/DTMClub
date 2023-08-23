@@ -1,0 +1,19 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+.contenedor-patrocinadores{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: v.$color_principal;
+
+    height: 5rem;
+
+    img{
+        width: auto;
+    }
+
+
+}
